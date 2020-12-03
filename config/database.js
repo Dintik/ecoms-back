@@ -4,8 +4,8 @@ module.exports = () => ({
     default: {
       connector: 'mongoose',
       settings: {
-        uri: "${process.env.DATABASE_URI}",
-        database: "${process.env.DATABASE_NAME}"
+        database: "mart-fury",
+        uri: "mongodb://dinti:dqd71AiQ82KSVvGM@martfury-shard-00-00.ryjbt.mongodb.net:27017,martfury-shard-00-01.ryjbt.mongodb.net:27017,martfury-shard-00-02.ryjbt.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-g7hyrr-shard-0&authSource=admin&retryWrites=true&w=majority"
       },
       options: {
         ssl: true,

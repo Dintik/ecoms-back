@@ -4,8 +4,8 @@ module.exports = () => ({
     default: {
       connector: 'mongoose',
       settings: {
-        uri: "${process.env.DATABASE_URI}",
-        database: "${process.env.DATABASE_NAME}"
+        uri: process.env.DATABASE_URI,
+        database: process.env.DATABASE_NAME
       },
       options: {
         ssl: true,
